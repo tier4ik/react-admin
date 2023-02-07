@@ -12,7 +12,7 @@ const SidebarUser = () => {
     <div className="flex flex-col items-center my-6">
       <img
         className="h-20 w-20 rounded-full mb-3"
-        src="/assets/user.png"
+        src="/react-admin/assets/user.png"
         alt="avatar"
       />
       <p className={usernameClasses}>Ed Roh</p>

@@ -12,51 +12,56 @@ import Line from "../pages/line";
 import Pie from "../pages/pie";
 import Faq from "../pages/faq";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "dashboard",
+          element: <Dashboard />,
+        },
+        {
+          path: "team",
+          element: <Team />,
+        },
+        {
+          path: "contacts",
+          element: <Contacts />,
+        },
+        {
+          path: "invoices",
+          element: <Invoices />,
+        },
+        {
+          path: "calendar",
+          element: <Calendar />,
+        },
+        {
+          path: "form",
+          element: <UserForm />,
+        },
+        {
+          path: "bar",
+          element: <Bar />,
+        },
+        {
+          path: "pie",
+          element: <Pie />,
+        },
+        {
+          path: "line",
+          element: <Line />,
+        },
+        {
+          path: "faq",
+          element: <Faq />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "dashboard",
-        element: <Dashboard />,
-      },
-      {
-        path: "team",
-        element: <Team />,
-      },
-      {
-        path: "contacts",
-        element: <Contacts />,
-      },
-      {
-        path: "invoices",
-        element: <Invoices />,
-      },
-      {
-        path: "calendar",
-        element: <Calendar />,
-      },
-      {
-        path: "form",
-        element: <UserForm />,
-      },
-      {
-        path: "bar",
-        element: <Bar />,
-      },
-      {
-        path: "pie",
-        element: <Pie />,
-      },
-      {
-        path: "line",
-        element: <Line />,
-      },
-      {
-        path: "faq",
-        element: <Faq />,
-      },
-    ],
-  },
-]);
+    basename: "/react-admin/",
+  }
+);
