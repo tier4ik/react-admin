@@ -15,7 +15,7 @@ import Faq from "../pages/faq";
 export const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/react-admin",
       element: <App />,
       children: [
         {
