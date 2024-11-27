@@ -17,7 +17,7 @@ const Sidebar = () => {
   const sidebarContainerClasses = `
   ${isOpen ? "w-[260px]" : "w-[100px]"}
   ${theme === "dark" ? "bg-slate-800" : "bg-gray-200"}
-   col-start-1 col-span-1 row-start-1 row-span-2 h-screen p-6 duration-700 transition-all`;
+   col-start-1 col-span-1 row-start-1 row-span-2 h-screen p-6`;
 
   const sidebarHeaderClasses = `
     ${isOpen ? "justify-between" : "justify-center mb-6"}
@@ -25,7 +25,7 @@ const Sidebar = () => {
     text-2xl flex items-center`;
 
   const inViewAnimation = `${
-    isOpen ? "animate-[inView_1s_ease-in-out_forwards]" : ""
+    isOpen ? "animate-[inView_0.5s_ease-in-out_forwards]" : ""
   }`;
 
   return (
